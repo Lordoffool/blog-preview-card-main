@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Figtree', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.card-container {
+    width: 384px;
+    height: 522px;
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 0px hsl(0, 0%, 7%);
+}
+
+.blog-image {
+    padding: 24px 24px 24px 24px;
+}
+
+.blog-image img {
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.learning-label {
+    background-color: #F4D04E;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    display: inline-block;
+}
+
+.card-content {
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.publish-date {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    line-height: 150%;
+}
+
+.card-title:hover {
+    color: #F4D04E;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+    line-height: 150%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 24px;
+}
+
+.author-avatar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    letter-spacing: 0px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 327px;
+        height: 501px;
+        gap: 12px;
+    }
+    .blog-image img{
+        width: 279px;
+        height: 200px;
+    }
+    .card-description {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .publish-date {
+        font-size: 12px;
+    }
+
+    .learning-label {
+        font-size: 12px;
+        padding: 2px 8px;
+    }
+}
